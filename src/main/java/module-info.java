@@ -1,8 +1,14 @@
-module ru.pasnin.vetclinic {
+module vetclinic {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
+    requires java.net.http;
 
+    opens vetclinic to javafx.fxml;
+    opens vetclinic.model to javafx.base;
+    opens vetclinic.scene to javafx.fxml;
 
-    opens ru.pasnin.vetclinic to javafx.fxml;
-    exports ru.pasnin.vetclinic;
+    exports vetclinic;
+    exports vetclinic.model;
+    exports vetclinic.scene;
 }

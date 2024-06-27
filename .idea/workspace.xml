@@ -5,28 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72c0e904-0edd-49de-9d61-52cbde81c5ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vetclinic/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pasnin/vetclinic/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pasnin/vetclinic/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ru/pasnin/vetclinic/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ru/pasnin/vetclinic/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pasnin/vetclinic/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pasnin/vetclinic/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ru/pasnin/vetclinic/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2iK8Sgo5U7e6t32nAk04tf8JerZ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -35,27 +42,46 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Client.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MainApp.executor": "Run",
+    "Application.vetclinic.Main.executor": "Run",
+    "Application.vetclinic.client.Main.executor": "Run",
+    "Application.vetclinic.scene.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Trash/Code/java/projects/Trash/vet-clinic",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Trash\Code\java\projects\Trash\vet-clinic" />
+      <recent name="C:\Users\leoni\IdeaProjects\vet-clinic\src\main\resources\vetclinic\client" />
+      <recent name="C:\Users\leoni\IdeaProjects\vet-clinic" />
+      <recent name="C:\Users\leoni\IdeaProjects\vet-clinic\src\main" />
+      <recent name="C:\Users\leoni\IdeaProjects\vet-clinic\src" />
+      <recent name="C:\Users\leoni\IdeaProjects\vet-clinic\src\main\resources\fonts" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="vetclinic" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.pasnin.vetclinic.Main" />
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vetclinic.MainApp" />
       <module name="vet-clinic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.pasnin.vetclinic.*" />
+          <option name="PATTERN" value="vetclinic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,7 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainApp" />
       </list>
     </recent_temporary>
   </component>
