@@ -1,6 +1,8 @@
 package vetclinic;
 
-// import org.json;
+import org.json.CDL;
+import org.json.JSONArray;
+import org.json.JSONTokener;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,9 +12,12 @@ import vetclinic.client.Client;
 
 public class MainApp extends Application {
     private Client client;
+    private Settings settings;
 
     @Override
     public void start(Stage stage) throws Exception {
+        // Load settings
+        settings = Settings.loadSettings();
         // Инициализация клиента
         client = new Client();
         client.startConnection("127.0.0.1", 1488);

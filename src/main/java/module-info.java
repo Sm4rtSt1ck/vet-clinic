@@ -3,6 +3,7 @@ module vetclinic {
     requires javafx.fxml;
     requires java.sql;
     requires java.net.http;
+    requires org.json;
 
     opens vetclinic to javafx.fxml;
     opens vetclinic.model to javafx.base;
