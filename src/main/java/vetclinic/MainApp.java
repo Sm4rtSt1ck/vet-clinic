@@ -1,8 +1,5 @@
 package vetclinic;
 
-import org.json.CDL;
-import org.json.JSONArray;
-import org.json.JSONTokener;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -12,15 +9,15 @@ import vetclinic.client.Client;
 
 public class MainApp extends Application {
     private Client client;
-    private Settings settings;
 
     @Override
     public void start(Stage stage) throws Exception {
         // Load settings
-        settings = Settings.loadSettings();
+        Settings.loadSettings();
         // Инициализация клиента
         client = new Client();
-        client.startConnection("127.0.0.1", 1488);
+        client.startConnection(Settings.getServerIp(), Settings.getServerPort());
+        MainController.setClient(client);
 
         // Настройка JavaFX UI
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
@@ -38,6 +35,7 @@ public class MainApp extends Application {
     public void stop() throws Exception {
         super.stop();
         client.stopConnection();
+        DatabaseManager.closeConnection();
     }
 
     public static void main(String[] args) {

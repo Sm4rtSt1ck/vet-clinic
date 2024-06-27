@@ -12,4 +12,5 @@ module vetclinic {
     exports vetclinic;
     exports vetclinic.model;
     exports vetclinic.scene;
+    exports vetclinic.client;
 }

@@ -12,11 +12,7 @@ public class Client {
         clientSocket = new Socket(ip, port);
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-    }
-
-    public String sendMessage(String msg) throws IOException {
-        out.println(msg);
-        return in.readLine();
+        System.out.println("Client connected!");
     }
 
     public void stopConnection() throws IOException {
