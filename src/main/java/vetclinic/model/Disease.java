@@ -5,5 +5,15 @@ public class Disease {
     private String commonName;
     private String scientificName;
 
-    // Getters and setters
+    public int getDiseaseId() {
+        return diseaseId;
+    }
+
+    public String getCommonName() {
+        return commonName;
+    }
+
+    public String getScientificName() {
+        return scientificName;
+    }
 }

@@ -1,16 +1,23 @@
 package vetclinic;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import vetclinic.client.Client;
 import vetclinic.dao.PetDAO;
 import vetclinic.model.Pet;
 
+import java.net.URL;
 import java.sql.SQLException;
-import java.util.List;
+import java.util.ResourceBundle;
 
-public class MainController {
+public class MainController implements Initializable {
     private static Client client;
     private static PetDAO petDAO = new PetDAO();
 
@@ -19,7 +26,15 @@ public class MainController {
     }
 
     @FXML
-    private ListView<String> petsListView;
+    private TableView<Pet> tableView;
+    @FXML
+    private TableColumn<Pet, Integer> idColumn;
+    @FXML
+    private TableColumn<Pet, String> nameColumn;
+    @FXML
+    private TableColumn<Pet, Integer> ownerColumn;
+    @FXML
+    private TableColumn<Pet, Integer> breedColumn;
 
     @FXML
     protected void viewOwners() {
@@ -29,11 +44,11 @@ public class MainController {
     @FXML
     protected void viewPets() {
         try {
-            List<Pet> pets = petDAO.getAllPets();
-            petsListView.getItems().clear();
-
-            for (Pet pet : pets) {
-                petsListView.getItems().add(pet.getName());
+            tableView.getItems().clear();
+            ObservableList<Pet> pets = FXCollections.observableArrayList();
+            tableView.setItems(pets);
+            for (Pet pet : petDAO.getAllPets()) {
+                pets.add(pet);
             }
         } catch (SQLException e) {
             showError("SQL Error", e.getMessage());
@@ -65,5 +80,13 @@ public class MainController {
         alert.setHeaderText(null);
         alert.setContentText(content);
         alert.showAndWait();
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        idColumn.setCellValueFactory(new PropertyValueFactory<>("petId"));
+        nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+        ownerColumn.setCellValueFactory(new PropertyValueFactory<>("ownerId"));
+        breedColumn.setCellValueFactory(new PropertyValueFactory<>("breedId"));
     }
 }

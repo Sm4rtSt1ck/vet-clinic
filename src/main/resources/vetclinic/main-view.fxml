@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vetclinic.MainController" spacing="10" alignment="CENTER">
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vetclinic.MainController">
     <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets bottom="20" left="20" right="20" top="20" />
     </padding>
 
     <Label text="Welcome to the Vet Clinic App" />
-    <Button text="View Owners" onAction="#viewOwners" />
-    <Button text="View Pets" onAction="#viewPets" />
-    <Button text="View Vets" onAction="#viewVets" />
-    <Button text="View Appointments" onAction="#viewAppointments" />
-    <ListView fx:id="petsListView" />
+    <Button onAction="#viewOwners" text="View Owners" />
+    <Button onAction="#viewPets" text="View Pets" />
+    <Button onAction="#viewVets" text="View Vets" />
+    <Button onAction="#viewAppointments" text="View Appointments" />
+    <TableView fx:id="tableView">
+      <columns>
+         <TableColumn fx:id="idColumn" minWidth="-Infinity" prefWidth="75.0" text="ID" />
+         <TableColumn fx:id="nameColumn" prefWidth="220.0" text="Name" />
+         <TableColumn fx:id="ownerColumn" prefWidth="235.0" text="Owner name" />
+         <TableColumn fx:id="breedColumn" prefWidth="229.0" text="Breed" />
+      </columns></TableView>
 </VBox>

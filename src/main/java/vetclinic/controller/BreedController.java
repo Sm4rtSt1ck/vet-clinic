@@ -1,4 +1,4 @@
-package vetclinic.scene;
+package vetclinic.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;

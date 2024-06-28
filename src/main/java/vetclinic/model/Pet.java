@@ -7,13 +7,13 @@ public class Pet {
     private int breedId;
 
     public Pet(int id, String name, int ownerId, int breedId) {
-        petId = id;
+        this.petId = id;
         this.name = name;
         this.ownerId = ownerId;
         this.breedId = breedId;
     }
 
-    public int getId() {
+    public int getPetId() {
         return petId;
     }
     public String getName() {

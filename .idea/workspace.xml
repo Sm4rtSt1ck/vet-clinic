@@ -6,15 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="72c0e904-0edd-49de-9d61-52cbde81c5ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/dao/PetDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/dao/PetDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/model/Breed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/model/Breed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/model/CommonDisease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/model/CommonDisease.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/model/Diagnosis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/model/Diagnosis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/model/Disease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/model/Disease.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/model/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/model/Owner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/model/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/model/Vet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/model/Vet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/scene/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/controller/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/scene/BreedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/controller/BreedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/scene/DiagnosisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/controller/DiagnosisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/scene/DiseaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/controller/DiseaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/scene/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/controller/OwnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/scene/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/controller/PetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vetclinic/scene/VetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vetclinic/controller/VetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/vetclinic/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vetclinic/main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +38,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>

@@ -1,19 +1,19 @@
-package vetclinic.scene;
+package vetclinic.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import vetclinic.model.Vet;
+import vetclinic.model.Owner;
 
-public class VetController {
+public class OwnerController {
 
     @FXML
-    private TableView<Vet> vetTable;
+    private TableView<Owner> ownerTable;
 
     @FXML
     private TextField nameField;
     @FXML
-    private TextField officeNumberField;
+    private TextField addressField;
     @FXML
     private TextField phoneNumberField;
 

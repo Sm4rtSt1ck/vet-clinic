@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PetDAO {
+public class PetDAO implements GenericDAO<Pet>{
     private Connection connection;
 
     public PetDAO() {
@@ -37,5 +37,23 @@ public class PetDAO {
         return pets;
     }
 
-    // Добавьте другие методы для работы с таблицей Pet
+    @Override
+    public void add(Pet entity) {
+
+    }
+
+    @Override
+    public Pet get(int id) {
+        return null;
+    }
+
+    @Override
+    public void update(Pet entity) {
+
+    }
+
+    @Override
+    public void delete(int id) {
+
+    }
 }

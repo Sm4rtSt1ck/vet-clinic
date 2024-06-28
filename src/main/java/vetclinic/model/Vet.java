@@ -6,5 +6,16 @@ public class Vet {
     private String officeNumber;
     private String phoneNumber;
 
-    // Getters and setters
+    public int getVetId() {
+        return vetId;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getOfficeNumber() {
+        return officeNumber;
+    }
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 }

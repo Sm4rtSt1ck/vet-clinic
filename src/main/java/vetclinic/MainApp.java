@@ -21,7 +21,7 @@ public class MainApp extends Application {
 
         // Настройка JavaFX UI
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+        Scene scene = new Scene(fxmlLoader.load());
 
         scene.getStylesheets().add("/style.css");
 

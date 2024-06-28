@@ -7,10 +7,10 @@ module vetclinic {
 
     opens vetclinic to javafx.fxml;
     opens vetclinic.model to javafx.base;
-    opens vetclinic.scene to javafx.fxml;
+    opens vetclinic.controller to javafx.fxml;
 
     exports vetclinic;
     exports vetclinic.model;
-    exports vetclinic.scene;
+    exports vetclinic.controller;
     exports vetclinic.client;
 }

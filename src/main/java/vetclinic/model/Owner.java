@@ -6,5 +6,19 @@ public class Owner {
     private String address;
     private String phoneNumber;
 
-    // Getters and setters
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 }

@@ -9,4 +9,24 @@ public class Appointment {
     private LocalTime time;
     private int petId;
     private int vetId;
+
+    public int getAppointmentId() {
+        return appointmentId;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public LocalTime getTime() {
+        return time;
+    }
+
+    public int getPetId() {
+        return petId;
+    }
+
+    public int getVetId() {
+        return vetId;
+    }
 }

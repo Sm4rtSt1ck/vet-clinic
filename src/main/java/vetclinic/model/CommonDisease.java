@@ -4,5 +4,11 @@ public class CommonDisease {
     private int breedId;
     private int diseaseId;
 
-    // Getters and setters
+    public int getBreedId() {
+        return breedId;
+    }
+
+    public int getDiseaseId() {
+        return diseaseId;
+    }
 }

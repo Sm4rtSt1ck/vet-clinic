@@ -4,5 +4,11 @@ public class Breed {
     private int breedId;
     private String name;
 
-    // Getters and setters
+    public int getBreedId() {
+        return breedId;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

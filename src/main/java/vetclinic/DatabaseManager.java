@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseManager {
-    private static final String URL = "jdbc:mysql://" + Settings.getServerIp() + ":" + Settings.getServerPort() + "/vet_clinic";;
-    private static final String USER = "root"; // измените на вашего пользователя
-    private static final String PASSWORD = ""; // измените на ваш пароль
+    private static final String URL = "jdbc:mysql://" + Settings.getServerIp() + ":" + Settings.getServerPort() + "/vet_clinic";
+    private static final String USER = "root";
+    private static final String PASSWORD = "";
 
     private static Connection connection;
 

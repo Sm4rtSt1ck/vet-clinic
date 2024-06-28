@@ -5,5 +5,15 @@ public class Diagnosis {
     private int diseaseId;
     private int appointmentId;
 
-    // Getters and setters
+    public int getDiagnosisId() {
+        return diagnosisId;
+    }
+
+    public int getDiseaseId() {
+        return diseaseId;
+    }
+
+    public int getAppointmentId() {
+        return appointmentId;
+    }
 }
