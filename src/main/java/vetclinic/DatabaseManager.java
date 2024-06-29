@@ -11,7 +11,7 @@ public class DatabaseManager {
 
     private static Connection connection;
 
-    static {
+    public static void createConnection() {
         try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
             System.out.println("Database connected!");

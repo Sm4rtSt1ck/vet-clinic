@@ -6,6 +6,13 @@ public class Owner {
     private String address;
     private String phoneNumber;
 
+    public Owner(int id, String name, String address, String phoneNumber) {
+        this.ownerId = id;
+        this.name = name;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+    }
+
     public int getOwnerId() {
         return ownerId;
     }

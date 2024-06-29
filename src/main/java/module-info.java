@@ -4,6 +4,7 @@ module vetclinic {
     requires java.sql;
     requires java.net.http;
     requires org.json;
+    requires jbcrypt;
 
     opens vetclinic to javafx.fxml;
     opens vetclinic.model to javafx.base;
@@ -12,5 +13,4 @@ module vetclinic {
     exports vetclinic;
     exports vetclinic.model;
     exports vetclinic.controller;
-    exports vetclinic.client;
 }

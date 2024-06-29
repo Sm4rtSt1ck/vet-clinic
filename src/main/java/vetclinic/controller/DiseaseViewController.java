@@ -5,7 +5,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import vetclinic.model.Disease;
 
-public class DiseaseController {
+public class DiseaseViewController {
 
     @FXML
     private TableView<Disease> diseaseTable;

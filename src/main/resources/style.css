@@ -1,5 +1,4 @@
 @font-face {
-    font-family: 'Comfortaa';
     src: url('fonts/Comfortaa-Bold.ttf');
 }
 
@@ -10,19 +9,27 @@
 
 .label {
     -fx-font-family: 'Comfortaa';
-    -fx-font-size: 20;
     -fx-text-fill: #b99ae5;
 }
 
-.text {
-    -fx-font-family: 'Comfortaa';
-}
-
 .button {
-    -fx-background-color: #303045;
+    -fx-background-color: #3b3b55;
     -fx-text-fill: #b99ae5;
 }
 
 .button:hover {
-    -fx-background-color: #3a3a53;
+    -fx-background-color: #4d4d6e;
+}
+
+.text-field {
+    -fx-background-color: #303045;
+    -fx-text-fill: #b99ae5;
+}
+
+.table-view .column-header .label {
+    -fx-background-color: #4d4d6e;
+}
+
+.table-row-cell {
+   -fx-background-color: transparent;
 }

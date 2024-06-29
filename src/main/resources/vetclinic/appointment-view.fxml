@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800" spacing="10" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vetclinic.controller.AppointmentView">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label alignment="CENTER" text="VetSystem">
+        <font>
+            <Font name="Comfortaa Bold" size="51.0" />
+        </font>
+   </Label>
+    <Label text="Your appointments">
+        <font>
+            <Font name="Comfortaa Bold" size="25.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="15.0" />
+        </VBox.margin>
+    </Label>
+   <TableView fx:id="appointmentsTableView" focusTraversable="false" style="-fx-background-color: #3b3b55; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10;" VBox.vgrow="ALWAYS">
+      <columns>
+         <TableColumn fx:id="dateColumn" editable="false" prefWidth="75.0" style="-fx-font-family: Comfortaa; -fx-font-size: 15pt; -fx-text-fill: #b99ae5;" text="Date" />
+         <TableColumn fx:id="timeColumn" editable="false" prefWidth="75.0" style="-fx-font-family: Comfortaa; -fx-font-size: 15pt; -fx-text-fill: #b99ae5;" text="Time" />
+         <TableColumn fx:id="petColumn" editable="false" prefWidth="75.0" style="-fx-font-family: Comfortaa; -fx-font-size: 15pt; -fx-text-fill: #b99ae5;" text="Pet" />
+         <TableColumn fx:id="vetColumn" editable="false" prefWidth="75.0" style="-fx-font-family: Comfortaa; -fx-font-size: 15pt; -fx-text-fill: #b99ae5;" text="Vet" />
+         <TableColumn fx:id="diagnosisColumn" editable="false" prefWidth="75.0" style="-fx-font-family: Comfortaa; -fx-font-size: 15pt; -fx-text-fill: #b99ae5;" text="Diagnosis" />
+      </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+   </TableView>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+        <Label layoutX="704.0" layoutY="116.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="by Leonid Aboltus" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button mnemonicParsing="false" style="-fx-font-family: Comfortaa;" text="Sign out" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+    </AnchorPane>
+</VBox>

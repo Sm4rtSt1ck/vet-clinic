@@ -1,6 +1,7 @@
 package vetclinic.dao;
 
 import vetclinic.DatabaseManager;
+import vetclinic.model.Owner;
 import vetclinic.model.Pet;
 
 import java.sql.Connection;
@@ -17,10 +18,11 @@ public class PetDAO implements GenericDAO<Pet>{
         this.connection = DatabaseManager.getConnection();
     }
 
-    public List<Pet> getAllPets() throws SQLException {
+    public List<Pet> getByOwner(Owner owner) throws SQLException {
         List<Pet> pets = new ArrayList<>();
-        String query = "SELECT * FROM Pets";
+        String query = "SELECT * FROM Pets WHERE owner_id = ?";
         PreparedStatement stmt = connection.prepareStatement(query);
+        stmt.setInt(1, owner.getOwnerId());
         ResultSet resultSet = stmt.executeQuery();
 
         while (resultSet.next()) {
@@ -43,8 +45,24 @@ public class PetDAO implements GenericDAO<Pet>{
     }
 
     @Override
-    public Pet get(int id) {
-        return null;
+    public Pet get(int id) throws SQLException {
+        String query = "SELECT * FROM Pets WHERE pet_id = ?";
+        PreparedStatement stmt = connection.prepareStatement(query);
+        stmt.setInt(1, id);
+        ResultSet resultSet = stmt.executeQuery();
+        if (resultSet.next()) {
+            Pet pet = new Pet(
+                    resultSet.getInt("pet_id"),
+                    resultSet.getString("name"),
+                    resultSet.getInt("owner_id"),
+                    resultSet.getInt("breed_id"));
+            stmt.close();
+            resultSet.close();
+            return pet;
+        }
+        stmt.close();
+        resultSet.close();
+        throw new SQLException();
     }
 
     @Override

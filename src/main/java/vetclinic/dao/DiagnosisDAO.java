@@ -1,8 +1,17 @@
 package vetclinic.dao;
 
+import vetclinic.DatabaseManager;
 import vetclinic.model.Diagnosis;
 
+import java.sql.Connection;
+
 public class DiagnosisDAO implements GenericDAO<Diagnosis> {
+    private Connection connection;
+
+    public DiagnosisDAO() {
+        this.connection = DatabaseManager.getConnection();
+    }
+
     @Override
     public void add(Diagnosis entity) {
 

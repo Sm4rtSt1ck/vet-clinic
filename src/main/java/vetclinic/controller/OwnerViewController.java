@@ -5,7 +5,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import vetclinic.model.Owner;
 
-public class OwnerController {
+public class OwnerViewController {
 
     @FXML
     private TableView<Owner> ownerTable;

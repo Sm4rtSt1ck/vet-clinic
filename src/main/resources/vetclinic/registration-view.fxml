@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800" spacing="10" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vetclinic.controller.RegistrationViewController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label maxHeight="5000.0" text="VetSystem" VBox.vgrow="ALWAYS">
+        <font>
+            <Font size="51.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="70.0" />
+        </VBox.margin></Label>
+    <Label text="Registration">
+        <font>
+            <Font size="25.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="15.0" />
+        </VBox.margin>
+    </Label>
+    <TextField fx:id="nameField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Name">
+        <font>
+            <Font name="Comfortaa Bold" size="15.0" />
+        </font>
+   </TextField>
+   <HBox alignment="CENTER">
+      <children>
+          <TextField fx:id="addressField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Address">
+              <font>
+                  <Font name="Comfortaa Bold" size="15.0" />
+              </font>
+            <HBox.margin>
+               <Insets right="50.0" />
+            </HBox.margin>
+         </TextField>
+          <TextField fx:id="phoneField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Phone">
+              <font>
+                  <Font name="Comfortaa Bold" size="15.0" />
+              </font>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER">
+      <children>
+          <TextField fx:id="loginField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Login">
+              <font>
+                  <Font name="Comfortaa Bold" size="15.0" />
+              </font>
+            <HBox.margin>
+               <Insets right="50.0" />
+            </HBox.margin>
+         </TextField>
+          <PasswordField fx:id="passwordField" alignment="CENTER" focusTraversable="false" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Password">
+              <font>
+                  <Font name="Comfortaa Bold" size="15.0" />
+              </font>
+          </PasswordField>
+      </children>
+      <VBox.margin>
+         <Insets bottom="5.0" />
+      </VBox.margin>
+   </HBox>
+    <Button mnemonicParsing="false" onAction="#registerAction" prefHeight="50.0" prefWidth="200.0" style="-fx-font-family: Comfortaa; -fx-font-size: 25px;" text="Register">
+        <font>
+            <Font name="Comfortaa Bold" size="25.0" />
+        </font>
+    </Button>
+    <Button mnemonicParsing="false" onAction="#backToLoginAction" prefHeight="50.0" prefWidth="200.0" style="-fx-font-family: Comfortaa; -fx-font-size: 24px;" text="Back to login">
+        <font>
+            <Font name="Comfortaa Bold" size="24.0" />
+        </font>
+    </Button>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+        <Label layoutX="704.0" layoutY="116.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="by Leonid Aboltus" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    </AnchorPane>
+</VBox>

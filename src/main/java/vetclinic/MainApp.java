@@ -5,36 +5,33 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import vetclinic.client.Client;
+import vetclinic.controller.SceneController;
 
 public class MainApp extends Application {
-    private Client client;
 
     @Override
     public void start(Stage stage) throws Exception {
-        // Load settings
+        // Load user settings
         Settings.loadSettings();
-        // Инициализация клиента
-        client = new Client();
-        client.startConnection(Settings.getServerIp(), Settings.getServerPort());
-        MainController.setClient(client);
+        DatabaseManager.createConnection();
 
-        // Настройка JavaFX UI
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("auth-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-
         scene.getStylesheets().add("/style.css");
+        stage.setMinWidth(800);
+        stage.setMinHeight(600);
 
         stage.setTitle("VetSystem");
         stage.getIcons().add(new Image("file:icon.png"));
         stage.setScene(scene);
-        stage.show();
+        // stage.show();
+
+        SceneController.init(stage, scene);
     }
 
     @Override
     public void stop() throws Exception {
         super.stop();
-        client.stopConnection();
         DatabaseManager.closeConnection();
     }
 

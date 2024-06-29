@@ -5,7 +5,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import vetclinic.model.Breed;
 
-public class BreedController {
+public class BreedViewController {
 
     @FXML
     private TableView<Breed> breedTable;
